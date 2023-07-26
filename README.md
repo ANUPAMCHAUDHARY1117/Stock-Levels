@@ -20,8 +20,7 @@ Step 3: To build project in CJM and ESM Library
 npm run build
 ```
 
-Step 3 : To get Stock Quantity, run command in the terminal ${sku} needs to be replaced with stock sku. For eg - npm run execute CLQ274846/07/46
-
+Step 3 : To get Stock Quantity, run command in the terminal and hit http://localhost:8000/stockquantity?sku=PGL751486/42/83
 ```
 npm run start
 ```
