@@ -14,7 +14,7 @@ Step 1 : To install dependencies, run command in the terminal
 npm install
 ```
 
-Step 3: To build project in CJM and ESM Library
+Step 2: To build project in CJM and ESM Library
 
 ```
 npm run build
