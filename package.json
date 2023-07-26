@@ -12,11 +12,12 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "tsc": "npm run clean && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && npm run copy-files",
-    "execute": "npm run build && node lib/cjs/run.js"
+    "start": "npm run build && node lib/cjs/app.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/express": "^4.17.17",
     "@types/jest": "^29.5.3",
     "@types/node": "^20.4.4",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
@@ -53,7 +54,7 @@
       ".args.ts",
       "/config/",
       "/data/",
-      "run.ts"
+      "app.ts"
     ],
     "coverageDirectory": "../ci_reports",
     "coverageReporters": [
@@ -72,5 +73,11 @@
     "reportPath": "ci_reports",
     "reportFile": "unit_test_report.xml",
     "indent": 4
+  },
+  "dependencies": {
+    "@types/express-validator": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1"
   }
 }

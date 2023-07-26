@@ -23,11 +23,17 @@ npm run build
 Step 3 : To get Stock Quantity, run command in the terminal ${sku} needs to be replaced with stock sku. For eg - npm run execute CLQ274846/07/46
 
 ```
-npm run execute ${sku}
+npm run start
 ```
 
 Step 4 : To get test coverage
 
 ```
 npm run test:cov
+```
+
+Step 4 : To test in the localhost
+
+```
+http://localhost:8000/stockquantity?sku=PGL751486/42/83
 ```
