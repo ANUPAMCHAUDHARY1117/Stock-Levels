@@ -12,7 +12,7 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "tsc": "npm run clean && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && npm run copy-files",
-    "execute": "npm run build && node lib/cjs/index.js"
+    "execute": "npm run build && node lib/cjs/run.js"
   },
   "author": "",
   "license": "ISC",
@@ -52,7 +52,8 @@
       ".mock.ts",
       ".args.ts",
       "/config/",
-      "/data/"
+      "/data/",
+      "run.ts"
     ],
     "coverageDirectory": "../ci_reports",
     "coverageReporters": [
